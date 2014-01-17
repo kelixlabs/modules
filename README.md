@@ -61,7 +61,7 @@ Note: Before creating a new module, run
   ```
 it will set the path and folder configuration module. 
 
-### Artisan Command Line 
+### Artisan CLI 
 1. Create a new module. 
 
   Format: 
