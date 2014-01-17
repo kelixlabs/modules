@@ -1,0 +1,23 @@
+{
+    "name": "pingpong/modules",
+    "description": "Make laravel to implements HMVC (Modular)",
+    "keywords": ["laravel", "pingpong", "modules", "modular", "hmvc", "laravel-modular", "laravel-modules"],
+    "authors": [
+        {
+            "name": "PiNGPONG LABS",
+            "email": "pingpong.labs@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "illuminate/support": "4.1.x",
+    },
+    "autoload": {
+        "psr-0": {
+            "Pingpong\\Modules": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
