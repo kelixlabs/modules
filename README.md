@@ -64,28 +64,41 @@ it will set the path and folder configuration module.
 ### Artisan Command Line 
 1. Create a new module. 
 
+  Format: 
+  `php artisan module:make <module-name>`
   ```
   php artisan module:make blog 
   ```
   
 2. Creating Migration 
+
   Format: 
   `php artisan module:migrate-make <module-name> <table-name> --fields="<optional>"`
   ```
   php artisan module:migrate-make blog user --fields="username:string, password:string" 
   ```
-3. Creating Controller
   
+3. Creating Controller
+
+  Format: 
+  `php artisan module:controller-make <module-name> <controller-name>`
   ```
   php artisan module:controller-make blog Site 
   ```
   It will be created `SiteController` on blog module.
+  
 4. Running migration
 
+  Format: 
+  `php artisan module:migrate <module-name>`
   ```
   php artisan module:migrate blog 
   ```
+  
 5. Seeding database
+  
+  Format: 
+  `php artisan module:migrate-make <module-name>`
 
   ```
   php artisan module:db-seed blog 
