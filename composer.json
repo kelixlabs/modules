@@ -2,6 +2,7 @@
     "name": "pingpong/modules",
     "description": "Make laravel to implements HMVC (Modular)",
     "keywords": ["laravel", "pingpong", "modules", "modular", "hmvc", "laravel-modular", "laravel-modules"],
+    "license":"The MIT License (MIT)",
     "authors": [
         {
             "name": "PiNGPONG LABS",
