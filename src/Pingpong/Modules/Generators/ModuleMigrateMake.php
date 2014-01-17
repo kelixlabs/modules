@@ -59,7 +59,7 @@ class ModuleMigrateMake extends Command {
 			return;
 		}
 
-		$template = app_path('commands/templates/migration.txt');
+		$template = __DIR__.'/templates/migration.txt';
 		if(!file_exists($template))
 		{
 			throw new \Exception("Migration template does not exists!");
