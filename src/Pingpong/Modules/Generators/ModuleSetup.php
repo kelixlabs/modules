@@ -20,7 +20,7 @@ class ModuleSetup extends Command {
 	 *
 	 * @var string
 	 */
-	protected $description = 'Setup module before you create or another module.';
+	protected $description = 'Setup module and publish configuration from this package.';
 
 	/**
 	 * Create a new command instance.
