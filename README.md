@@ -42,17 +42,6 @@ laravel/
         |-- views
         |-- filters.php
         |-- routes.php
-    |-- user
-        |-- config
-        |-- controllers
-        |-- database
-            |-- migrations
-            |-- seeds
-        |-- models
-        |-- tests
-        |-- views
-        |-- filters.php
-        |-- routes.php
 |-- vendors
 ```
 
