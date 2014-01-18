@@ -16,7 +16,7 @@ Next, open a terminal and run.
   composer update 
   ```
 
-After the composer updated to add new providers in `app/config/app.php`. 
+After the composer updated. Add new service provider in `app/config/app.php`. 
 
   ```
   'Pingpong\Modules\ModulesServiceProvider' 
@@ -42,11 +42,22 @@ laravel/
         |-- views
         |-- filters.php
         |-- routes.php
+    |-- user
+        |-- config
+        |-- controllers
+        |-- database
+            |-- migrations
+            |-- seeds
+        |-- models
+        |-- tests
+        |-- views
+        |-- filters.php
+        |-- routes.php
 |-- vendors
 ```
 
 ### Introduction 
-After the installation is finished you will get a new features artisan. 
+After the installation is finished you will get a new artisan features. 
 
 1. Creating new module.
 2. Run migration from specified module.
@@ -103,3 +114,43 @@ it will set the path and folder configuration module.
   ```
   php artisan module:db-seed blog 
   ```
+  
+### Module Namespaces
+
+When you creating a new module, it also creating a new namespace view, lang and config for that module. For example if you create a new module something like 'Blog' you can calling a lang, view and config like below:
+
+Calling view:
+
+`View::make('<module-name>::<view-name>')`
+
+```php
+
+
+  View::make('blog::index');
+  
+  View::make('blog::content.index')
+  
+```
+
+Calling config:
+
+`Config::get('<module-name>::<config>')`
+
+```php
+  
+
+  Config::get('blog::site.author')
+
+```
+
+Calling lang
+
+`Lang::get('<module-name>::<lang>')`
+
+```php
+
+
+  Lang::get('blog::title')
+  
+```
+
