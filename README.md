@@ -113,12 +113,8 @@ Calling view:
 `View::make('<module-name>::<view-name>')`
 
 ```php
-
-
   View::make('blog::index');
-  
   View::make('blog::content.index')
-  
 ```
 
 Calling config:
@@ -126,10 +122,7 @@ Calling config:
 `Config::get('<module-name>::<config>')`
 
 ```php
-  
-
   Config::get('blog::site.author')
-
 ```
 
 Calling lang
@@ -137,10 +130,7 @@ Calling lang
 `Lang::get('<module-name>::<lang>')`
 
 ```php
-
-
   Lang::get('blog::title')
-  
 ```
 
 ### License
