@@ -46,7 +46,7 @@ laravel/
 ```
 
 ### Introduction 
-After the installation is finished you will get a new artisan features. 
+After the installation is finished you will get a new artisan features for: 
 
 1. Creating new module.
 2. Run migration from specified module.
