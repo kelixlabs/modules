@@ -42,7 +42,7 @@ laravel/
         |-- views
         |-- filters.php
         |-- routes.php
-|-- vendors
+|-- vendor
 ```
 
 ### Introduction 
